@@ -1,0 +1,29 @@
+{
+  "name": "store-application-backend",
+  "version": "1.0.0",
+  "main": "server.ts",
+  "repository": "https://github.com/Ryan-Matheus13/store-application-backend.git",
+  "author": "Ryan Matheus <ryanmatheusdev@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --transpile-only src/server.ts",
+    "typeorm": "ts-node node_modules/typeorm/cli.js",
+    "migrations:run": "ts-node -r tsconfig-paths/register src/run-migrations.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/uuid": "^9.0.8",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.11.5",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.20",
+    "uuid": "^9.0.1"
+  }
+}
